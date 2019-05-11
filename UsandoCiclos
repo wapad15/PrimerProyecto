@@ -1,0 +1,71 @@
+'imprimir los numeros del 1 al 100'
+'imprimir los numeros del 1 al 100 de 2 en 2'
+'imprimir los numeros del 1 al 100 de 5 en 5'
+'imprimir los numeros del 100 al 1'
+'imprimir los numeros del 100 al 0 de 2 en 2'
+'crear un menù de 5 opciones (Crear, Listar, Editar, Borrar, Salir)'
+
+def contador1():
+    for i in range(1, 101):
+        print(i)
+
+
+def contador2():
+    for i in range(1, 101):
+        if i % 2 == 0:
+            print(i)
+
+
+def contador3():
+    for i in range(1 , 100):
+        if i % 5 == 0:
+            print(i)
+
+
+def contador4():
+  for i in range(100, 0 , -1):
+    print(i)
+
+def contador5():
+  for i in range(100, 0 , -2):
+    print(i)
+
+
+def menu():
+  print("1. crear")
+  print("2. listar")
+  print("3. editar")
+  print("4. borrar")
+  print("5. salir")
+
+  op1 = int(input("Ingrese su opcion: "))
+
+  while True:
+    if op1 == 1:
+      print("Su opcion fue crear")
+      break
+    if op1 == 2:
+      print("su opcion fue listar")
+      break
+    if op1 == 3:
+      print("su opcion fue editar")
+      break
+    if op1 == 4:
+      print("su opcion fue borrar")
+      break
+    if op1 == 5:
+      print("su opcion fue salir")
+      break
+
+    if op1 > 5 and op1 < 0:
+      menu()
+
+
+menu()
+
+  
+#contador2()
+#contador2()
+#contador3()
+#contador4()
+#contador5()
