@@ -1,0 +1,94 @@
+'algoritmo pares e impares'
+'cuente la cantidad de letras de una frase'
+'cuente la cantidad de espacios en blanco de una frase'
+'cuente la cantidad de vocales de una frase'
+'cuente la cantidad de signos de puntuaciòn de una frase'
+'cuente la cantidad de consonantes de una frase'
+
+
+def numerosPares(numero):
+    print("algoritmo pares e impares")
+    if numero % 2 == 0:
+        print("Numero par: ", numero)
+    else:
+        print("Numero impar: ", numero)
+
+
+def letrasFrase(cadena):
+    print("algoritmo para determinar cantidad de letras")
+    tamano = len(cadena)
+    print("el tamaño de", cadena, " es: ", tamano)
+
+
+def espaciosBlanco(cadena):
+    numero = 0
+    print("algoritmo para determinar espacios en blancos en una frase")
+    for letra in cadena:
+        if letra == ' ':
+            numero += 1
+    print("la cantidad de espacios es blanco es:", numero)
+
+
+def puntuacionCantidad(cadena):
+    numero = 0
+    print("algoritmo para determinar espacios en blancos en una frase")
+    for letra in cadena:
+        if letra == ".":
+            numero += 1
+        if letra == ",":
+            numero += 1
+        if letra == ";":
+            numero += 1
+        if letra == ":":
+            numero += 1
+
+    print("la cantidad de signos de puntuacion es:", numero)
+
+
+def vocalesCantidad(cadena):
+    numero = 0
+    print("algoritmo para determinar la cantidad de vocales de una frase")
+    for letra in cadena:
+        if letra == "a":
+            numero += 1
+        if letra == "e":
+            numero += 1
+        if letra == "i":
+            numero += 1
+        if letra == "o":
+            numero += 1
+        if letra == "u":
+            numero += 1
+
+    print("la cantidad de vocales en", cadena, " es: ", numero)
+
+
+def consonantesCantidad(cadena):
+    numero = 0
+    print("algoritmo para determinar la cantidad de consonantes de una frase")
+    for letra in cadena:
+        if letra != "a":
+            numero += 1
+        if letra != "e":
+            numero += 1
+        if letra != "i":
+            numero += 1
+        if letra != "o":
+            numero += 1
+        if letra != "u":
+            numero += 1
+        if not letra.isdigit():
+            numero += 1
+        if not letra.isspace():
+            numero += 1
+
+
+# entradaUsuario = input("Ingrese el numero:")
+# numerosPares(int(entradaUsuario))
+
+entradausuario2 = input("ingrese una frase: ")
+#letrasFrase(entradausuario2)
+#espaciosBlanco(entradausuario2)
+#puntuacionCantidad(entradausuario2)
+#vocalesCantidad(entradausuario2)
+#consonantesCantidad(entradausuario2)
