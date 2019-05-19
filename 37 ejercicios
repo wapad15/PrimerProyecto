@@ -1,0 +1,95 @@
+def numeroCuatro(cadena):
+  tamano = 0 
+  tamano = len(cadena)
+  if cadena[tamano-1]=='4':
+    print("el numero termina en cuatro")
+  else:
+    print ("el numero no temina en cuatro ")
+
+def tresDigitos(cadena):
+  tamano = 0
+  tamano = len(cadena)
+  if tamano == 3:
+    print ("el numero tiene 3 digitos")
+  else:
+    print ("el numero no tiene tres digitos")
+
+def numeroNegativo(cadena):
+  if cadena < 0:
+    print("el numero es negativo")
+  else: 
+    print("el numero es positivo")
+
+def sumaDigitos(cadena):
+  num1,num2,suma=0,0,0
+  if len(cadena) > 2:
+    print ("solo se admiten numeros de dos cifras")
+  else: 
+    num1 = int(cadena[0])
+    num2 = int(cadena[1])
+    suma = num1+num2
+    print(suma)  
+  
+def digitosPares(cadena):
+  num1,num2=0,0
+  if len(cadena) > 2:
+    print ("solo se admiten numeros de dos cifras")
+  else:
+    num1 = int(cadena[0])
+    num2 = int(cadena[1])
+    if num1 % 2 == 0 and num2 % 2 == 0:
+      print("los dos digitos de este nuemros son pares")  
+    else:
+      if num1 % 2 != 0:
+        print("el primer digito numeo no es par")
+      else:
+        print("el segundo digito no es par")  
+
+def primoMenorDeVeinte(cadena):
+    num1 = int(cadena)
+    bandera = 0
+    if num1 > 20:
+      print("solo se admiten numeros menores que 20")
+      return False
+    else:
+      for i in range(2,num1):
+        if num1 % i == 0:
+          bandera +=1
+    if bandera >= 1 :
+      return False
+    else: 
+      return True       
+
+def primoNegativo(cadena):
+    num1 = int(cadena)
+    bandera = 0
+    if len(cadena) > 2 :
+      print("el numero tiene mas de dos cifras")
+      return False
+    else:
+      for i in range(2,num1):
+        if num1 % i == 0:
+          bandera +=1
+    if bandera == 0 and num1 < 0 :
+      return True
+    else: 
+      return False
+
+
+numero = input("ingrese un numero:")
+#numeroCuatro(numero)
+#tresDigitos(numero)
+#numeroNegativo(int(numero))
+#sumaDigitos(numero)
+#digitosPares(numero)
+
+#if primoMenorDeVeinte(numero):
+#  print ("numero menor que 20 y primo")
+#else:
+  #print ("el numero no es primo")  
+
+#if primoNegativo(numero):
+#  print("el numero es primo y negativo")
+#else:
+#  print("el numero no cumple una de las condiciones")
+
